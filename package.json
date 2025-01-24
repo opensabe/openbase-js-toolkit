@@ -1,0 +1,17 @@
+{
+  "name": "openbase-js-toolkit",
+  "version": "0.1.1",
+  "scripts": {
+    "build": "bun run build.ts",
+    "test": "bun test"
+  },
+  "exports": {
+    "./format": "./dist/format"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+test/
+*.log
+src/
+build.ts
+bun.lock
+README.md
+tsconfig.json
