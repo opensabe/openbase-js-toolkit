@@ -63,3 +63,15 @@ import { multiple10K, devide10K, formatNumber } from 'openbase-js-toolkit/format
       ```js
       const formattedNumber = formatNumber(1234567.891, 2); // '1,234,567.89'
       ```
+
+## 开发
+```sh
+# install
+bun install
+
+# test
+bun test
+
+# build
+bun run build
+```

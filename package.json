@@ -1,6 +1,6 @@
 {
   "name": "openbase-js-toolkit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "build": "bun run build.ts",
     "test": "bun test"
@@ -13,5 +13,9 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opensabe/openbase-js-toolkit"
   }
 }
