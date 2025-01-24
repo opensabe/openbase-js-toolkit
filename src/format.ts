@@ -39,14 +39,17 @@ export function formatNumber(num: number | string, decimals: number | null = nul
   const value: string = num.toString()
 
   // Automatically calculate decimal places if not provided
+  let realDecimals: number
   if (decimals === null || decimals === undefined) {
-    decimals = countDecimalPlaces(value)
+    realDecimals = countDecimalPlaces(value)
   } else if (!decimals) {
-    decimals = 0
+    realDecimals = 0
+  } else {
+    realDecimals = decimals
   }
 
-  const [integerNum, decimalNum] = Number(num).toFixed(decimals).split('.')
+  const [integerNum, decimalNum] = Number(num).toFixed(realDecimals).split('.')
   const formattedIntegerNum = integerNum.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 
-  return formattedIntegerNum + (decimalNum ? '.' + decimalNum : '')
+  return formattedIntegerNum + (decimalNum ? `.${decimalNum}` : '')
 }

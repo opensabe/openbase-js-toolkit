@@ -2,6 +2,7 @@
   "name": "openbase-js-toolkit",
   "version": "0.1.2",
   "scripts": {
+    "lint": "biome check .",
     "build": "bun run build.ts",
     "test": "bun test"
   },
@@ -9,6 +10,7 @@
     "./format": "./dist/format"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@types/bun": "latest"
   },
   "peerDependencies": {

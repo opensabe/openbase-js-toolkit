@@ -1,8 +1,8 @@
-import { expect, test } from "bun:test";
-import { multiple10K, devide10K, formatNumber } from '../src/format.ts';
+import { expect, test } from 'bun:test'
+import { devide10K, formatNumber, multiple10K } from '../src/format.ts'
 
 test('formatNumber: 精度 eg. 288.9*100===28889.999999999996', () => {
-  expect(formatNumber(288.9*100, 2)).toBe('28,890.00')
+  expect(formatNumber(288.9 * 100, 2)).toBe('28,890.00')
 })
 
 test('formatNumber: 整数，保留两位小数', () => {
